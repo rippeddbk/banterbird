@@ -1,4 +1,5 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, jsonify
+import json
 
 app = Flask(__name__)
 
@@ -6,5 +7,14 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+@app.route('/api/posts')
+def get_post():
+   with open('post.json', 'r') as file:
+       posts = json.load(file)
+   return jsonify(posts)
+
+
+
 if __name__ == '__main__':
     app.run(debug=True)
+
