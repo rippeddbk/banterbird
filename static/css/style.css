@@ -9,6 +9,18 @@ body {
     font-style: normal;
 }
 
+h1 {
+    background-image: url(https://file.garden/aAl1art0BgljBjcl/IMG_7137.webp);
+    border: 4px ridge rgba(0, 0, 0, 0.75);
+
+
+}
+
+
+#postInput{
+    color:green
+    
+}
 div{ 
     text-align: center;
 }
@@ -33,18 +45,31 @@ h1{
     color: black;
 }
 
+p{ 
+    color:green;
+    background-size: 100px;
+    border-radius: 4px;
+
+
+    height: 100%;
+    background-image: url("https://file.garden/aAl1art0BgljBjcl/IMG_7266.jpeg");
+    filter: grayscale(35%);
+    background-position: right;
+    background-size: cover;
+    padding: 15px;
+    border: 4px ridge rgba(0, 0, 0, 0.75);
+}
+
 #feed { 
     border: 4px ridge #623225;
     background-color: #623225;
-    border-radius: 5px;
-    text-align: center;
+
 }
 
 button{
     transition: 0.2s;
     width: 100px;
     border-radius: 4px;
-    color: white;
     background: #623225;
     border-color: #623225;
 
